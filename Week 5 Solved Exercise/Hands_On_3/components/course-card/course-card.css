@@ -1,0 +1,23 @@
+.card--enrolled {
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card--full {
+  font-weight: bold;
+}
+
+.expanded {
+  min-height: 200px;
+}
+
+div {
+  margin: 10px 0;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+button {
+  margin-right: 10px;
+}

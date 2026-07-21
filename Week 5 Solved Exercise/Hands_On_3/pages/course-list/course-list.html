@@ -1,0 +1,36 @@
+<h2>Course List</h2>
+
+@if(isLoading){
+
+<p>Loading courses...</p>
+
+}
+@else {
+
+@if(courses.length > 0){
+
+@for(c of courses; track c.id){
+
+<app-course-card
+  [course]="c"
+  (enrollRequested)="onEnroll($event)">
+</app-course-card>
+
+}
+
+}
+@else{
+
+<p>No courses available.</p>
+
+}
+
+}
+
+@if(selectedCourseId){
+
+<p>
+  Selected course ID: {{selectedCourseId}}
+</p>
+
+}
