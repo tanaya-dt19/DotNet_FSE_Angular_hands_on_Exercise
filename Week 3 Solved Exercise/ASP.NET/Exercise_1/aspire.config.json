@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "FirstWebApi.AppHost/FirstWebApi.AppHost.csproj"
+  }
+}
